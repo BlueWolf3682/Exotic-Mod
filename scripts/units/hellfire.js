@@ -10,4 +10,4 @@ hellfire.constructor = () => extend(UnitEntity, {
   remove(){
     if(this.dead) this.super$remove();
 }});
-hellfire.abilities.add(new ForceFieldAbility(300, 1450, 2546330, 25));
+hellfire.abilities.add(new ForceFieldAbility(300, 265040, 155433600, 25));
