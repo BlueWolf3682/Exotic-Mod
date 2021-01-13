@@ -1,8 +1,8 @@
 type: flying
 localizedName: Hellfire
 description: A massive starship, capable of easily destroying the most powerful units and laying waste to any base in its path. Avoid encounters if possible.
-details: "One of the last intact remnants of a long lost civilization. Powerful, relentless, nearly indestructible. But not invincible. \nDo you have the strength to take it down?"
-speed: 0.25
+details: "One of the last intact remnants of a long lost civilization. Powerful, relentless, nearly indestructible. But not invincible. \n\nDo you have the strength to take it down?"
+speed: 0.4
 accel: 0.5
 flying: true
 range: 240
@@ -50,7 +50,7 @@ weapons: [
     bullet: {
       damage: 55650
       speed: 15
-      lifetime: 7
+      lifetime: 12
       pierce: true
       pierceBuilding: true
       height: 10
@@ -70,7 +70,7 @@ weapons: [
     bullet: {
       damage: 55650
       speed: 15
-      lifetime: 7
+      lifetime: 12
       pierce: true
       pierceBuilding: true
       height: 10
@@ -112,9 +112,11 @@ weapons: [
     bullet: {
       damage: 676550
       speed: 14
-      lifetime: 15
+      lifetime: 35
       pierce: true
       pierceBuilding: true
+      height: 28
+      width: 18
       homingPower: 5.0
       homingRange: 32
       frontColor: ffffff
@@ -133,7 +135,7 @@ weapons: [
     bullet: {
       damage: 676550
       speed: 14
-      lifetime: 15
+      lifetime: 35
       pierce: true
       pierceBuilding: true
       height: 28
