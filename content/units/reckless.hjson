@@ -1,0 +1,36 @@
+type: flying
+localizedName: Reckless
+description: A well fleshed out flying unit that can both heal units and attack hostiles.
+speed: 2
+drag: 0.1
+flying: true
+hitSize: 18
+health: 12550
+armor: 14
+rotateShooting: true
+faceTarget: true
+buildSpeed: 2.7
+mineSpeed: 4
+mineTier: 5
+engineOffset: 8
+weapons: [
+{
+  name: reckless-weapon
+  shootCone: 15
+  mirror: true
+  x: 2
+  y: 6
+  reload: 5
+  recoil: 2
+  bullet: {
+    type: LaserBoltBulletType
+    damage: 240
+    speed: 6
+    frontColor: 6f7fe8
+    backColor: 5757c2
+    collidesTeam: true
+    lifetime: 45
+    healPercent: 4
+  }
+}
+]

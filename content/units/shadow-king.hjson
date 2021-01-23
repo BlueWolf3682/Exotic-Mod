@@ -37,7 +37,7 @@ weapons: [
         homingPower: 90
         homingRange: 90
         lightning: 20
-        lightningLength: 50
+        lightningLength: 6
         hitShake: 5
       }
     }

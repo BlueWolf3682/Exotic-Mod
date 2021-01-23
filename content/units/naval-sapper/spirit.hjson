@@ -1,0 +1,47 @@
+type: naval
+localizedName: Spirit
+description: A fast naval unit that leeches health from hostile units.
+speed: 3
+accel: 0.5
+hitSize: 18
+health: 17550
+armor: 18
+rotateSpeed: 6
+rotateShooting: false
+trailX: 2.5
+trailY: -6.75
+trailScl: 1
+trailLength: 50
+weapons: [
+  {
+    name: spirit-weapon
+    rotate: true
+    rotateSpeed: 10
+    mirror: true
+    reload: 10
+    x: 4
+    y: 4
+    recoil: 2
+    inaccuracy: 0
+    shots: 1
+    shotDelay: 50
+    shootSound: sap
+    ejectEffect: none
+    bullet: {
+      type: SapBulletType
+      damage: 650
+      length: 250
+      sapStrength: 0.75
+      shootEffect: shootLiquid
+      color: bf92f9
+      knockback: 0
+    }
+  }
+]
+research: {
+  parent: constructor
+  requirements: [
+    silicon/13550
+    metaglass/12450
+  ]
+}

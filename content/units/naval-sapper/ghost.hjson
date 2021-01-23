@@ -1,0 +1,67 @@
+type: naval
+localizedName: Ghost
+description: Leeches health from enemies and destroys structures with a long ranged artillery cannon.
+speed: 1
+accel: 0.5
+flying: false
+range: 200
+hitSize: 60
+health: 155660
+armor: 45
+rotateSpeed: 3
+rotateShooting: false
+weapons: [
+{
+  name: spirit-weapon
+  x: 5
+  y: 7
+  reload: 10
+  rotate: true
+  ejectEffect: none
+  shootSound: sap
+  recoil: 2
+  bullet: {
+    type: SapBulletType
+    damage: 1550
+    length: 400
+    sapStrength: 0.85
+    shootEffect: shootLiquid
+    knockback: -5
+    color: bf92f9
+  }
+}
+{
+  name: ghost-weapon
+  x: 0
+  y: -24
+  mirror: false
+  rotate: true
+  reload: 120
+  ejectEffect: casing3
+  recoil: 5
+  rotateSpeed: 0.75
+  shootSound: artillery
+  bullet: {
+    type: ArtilleryBulletType
+    speed: 4
+    splashDamage: 15530
+    splashDamageRadius: 55
+    width: 18
+    height: 24
+    despawnEffect: sapExplosion
+    frontColor: bf92f9
+    backColor: 6d56bf
+    lifetime: 180
+    status: sapped
+    statusDuration: 1080
+  }
+}
+]
+research: {
+  parent: spirit
+  requirements: [
+    silicon/76550
+    lead/76550
+    metaglass/45530
+  ]
+}

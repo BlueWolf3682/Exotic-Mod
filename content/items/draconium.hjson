@@ -2,5 +2,6 @@ name: Draconium
 description: A powerful material. Internal reactions make it almost glow red hot with heat. Extremely powerful if used correctly, though dangerous. Highly suggested for weaponization.
 hardness: 9
 cost: 6
+explosiveness: 4.4
 color: "960000"
 research: bluewolframite

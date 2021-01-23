@@ -1,7 +1,7 @@
 type: genericCrafter
 localizedName: Plastanium Forge
-description: A more advanced Plastanium Compresser that produces Plastanium more efficently.
-craftTime: 30
+description: A larger and more effective plastanium compressor. Requires spore pods for oil.
+craftTime: 45
 size: 3
 hasPower: true
 hasLiquids: true
@@ -10,15 +10,23 @@ consumes: {
   items: {
     items: [
       titanium/3
+      spore-pod/2
     ]
   }
   liquid: {
-    liquid: oil
-    amount: 0.7
+    liquid: water
+    amount: 0.2
   }
   power: 3.75
 }
-requirements: []
+craftEffect: smokeCloud
+requirements: [
+  copper/250
+  lead/175
+  silicon/150
+  titanium/75
+  thorium/110
+]
 category: crafting
 outputItem: plastanium/2
-research: amethyst-refiner
+research: plastanium-compressor

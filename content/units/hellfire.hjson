@@ -24,7 +24,6 @@ weapons: [
     mirror: false
     continuous: true
     shootSound: beam
-    
     recoil: 0
     shotDelay: 60
     bullet: {
@@ -36,7 +35,10 @@ weapons: [
       shake: 15
       width: 8
       damage: 345980
-      colors: [87a3ff, abbeff, cfdaff, ffffff]
+      colors: [e65555, ff9c59, f2e879, 84f591, 8ca4f5, a488eb]
+      lenscales: [1.2, 1.25, 1.35, 1.45, 1.55, 1.65]
+      tscales: [1.2, 1.25, 1.35, 1.45, 1.55, 1.65]
+      strokes: [1.5, 1.25, 1, 0.75, 0.5, 0.25]
     }
   }
   {

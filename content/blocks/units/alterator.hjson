@@ -1,0 +1,27 @@
+type: Reconstructor
+name: Alterator
+description: Upgrades inputted units to their second tier.
+size: 8
+health: 15465540
+constructTime: 13550
+liquidCapacity: 60
+consumes: {
+  power: 4.8
+    items: {
+      items: [
+        silicon/1550
+        amethyst-gem/750
+      ]
+    }
+  liquid: {
+    liquid: cryofluid
+    amount: 0.3
+  }
+}
+upgrades: [
+  [spirit, ghost]
+  [virus, pathogen]
+]
+buildVisibility: shown
+category: units
+research: constructor

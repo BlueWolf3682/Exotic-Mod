@@ -1,0 +1,29 @@
+type: GenericSmelter
+localizedName: Tungsten Refiner
+description: Extracts tungsten from wolframite scrap for use in units.
+size: 3
+hasPower: true
+hasLiquids: false
+hasItems: true
+craftTime: 52
+craftEffect: hitFuse
+updateEffect: hitLancer
+consumes: {
+  power: 2.6
+  items: {
+    items: [
+      wolframite/3
+    ]
+  }
+}
+requirements: [
+  amethyst-gem/20
+  titanium/20
+  thorium/60
+  lead/60
+]
+category: crafting
+research: blue-wolframite-refiner
+ambientSound: build
+ambientSoundVolume: 0.5
+outputItem: tungsten/2

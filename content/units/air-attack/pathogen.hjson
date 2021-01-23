@@ -1,0 +1,112 @@
+type: flying
+localizedName: Pathogen
+description: Drops large bombs and fires clusters of missiles at hostile targets.
+flying: true
+lowAltitude: true
+rotateSpeed: 2.5
+health: 135400
+armor: 55
+hitSize: 73
+speed: 1.4
+accel: 0.05
+drag: 0.02
+targetAir: false
+engineOffset: 40
+engineSize: 9.5
+circleTarget: true
+rotateShooting: false
+weapons: [
+{
+  name: pathogen-bomber
+  x: 16
+  y: 12
+  minShootVelocity: 0.2
+  reload: 120
+  shootCone: 360
+  alternate: false
+  ejectEffect: none
+  shootSound: plasmadrop
+  bullet: {
+    type: BombBulletType
+    splashDamage: 11550
+    splashDamageRadius: 55
+    width: 12
+    height: 18
+    lifetime: 60
+    maxRange: 40
+    frontColor: e65555
+    backColor: a63d3d
+    shootEffect: none
+    despawnEffect: {
+      type: ParticleEffect
+      particles: 24
+      cone: 360
+      colorFrom: e65555
+      colorTo: a63d3d
+      sizeFrom: 15
+      length: 108
+      lifetime: 45
+    }
+  }
+}
+{
+  name: pathogen-bomber
+  x: 20
+  y: -12
+  minShootVelocity: 0.2
+  reload: 120
+  shootCone: 360
+  alternate: false
+  shootSound: plasmadrop
+  ejectEffect: none
+  bullet: {
+    type: BombBulletType
+    splashDamage: 11550
+    splashDamageRadius: 55
+    width: 12
+    height: 18
+    lifetime: 60
+    maxRange: 40
+    frontColor: e65555
+    backColor: a63d3d
+    shootEffect: none
+    despawnEffect: {
+      type: ParticleEffect
+      particles: 24
+      cone: 360
+      colorFrom: e65555
+      colorTo: a63d3d
+      sizeFrom:15
+      length: 108
+      lifetime: 45
+    }
+  }
+}
+{
+  name: pathogen-missiles
+  x: 0
+  y: 16
+  reload: 45
+  rotate: true
+  mirror: false
+  shots: 3
+  spacing: 4
+  shotDelay: 4
+  recoil: 1.5
+  shootSound: missile
+  bullet: {
+    type: MissileBulletType
+    damage: 5660
+    speed: 5
+    lifetime: 60
+    splashDamage: 2550
+    splashDamageRadius: 25
+    frontColor: e65555
+    backColor: a63d3d
+    hitEffect: flakExplosion
+    despawnEffect: flakExplosion
+    trailColor: a63d3d
+  }
+}
+]
+research: virus

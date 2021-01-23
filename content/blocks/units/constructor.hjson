@@ -1,54 +1,58 @@
 type: UnitFactory
 name: Constructor
-description: Produces any one of four selected basic units.
+description: Produces any one of four selected basic units. Requires a large amount of water for coolant.
 health: 455750
 size: 4
 consumes: {
   power: 3.5
+  liquid: {
+    liquid: water
+    amount: 0.5
+  }
 }
 plans: [
   {
-    unit: medea
-    time: 1080
+    unit: spirit
+    time: 2160
     requirements: [
-      silicon/25
-      metaglass/30
+      silicon/250
+      metaglass/300
     ]
   }
   {
-    unit: ghost
-    time: 1500
+    unit: reckless
+    time: 3000
     requirements: [
-      silicon/40
-      lead/35
-      titanium/25
+      silicon/400
+      lead/350
+      titanium/250
     ]
   }
   {
-    unit: pfsgcm
-    time: 900
-    requirements: [
-      silicon/45
-      blast-compound/35
-    ]
-  }
-  {
-    unit: draconium-leader
+    unit: virus
     time: 1800
     requirements: [
-      silicon/50
-      lead/45
-      titanium/35
-      thorium/15
+      silicon/450
+      blast-compound/350
+    ]
+  }
+  {
+    unit: spark
+    time: 3600
+    requirements: [
+      silicon/500
+      lead/450
+      titanium/350
+      thorium/150
     ]
   }
 ]
 requirements: [
-  lead/250
-  silicon/175
-  titanium/165
-  thorium/110
-  surge-alloy/25
+  lead/550
+  silicon/350
+  titanium/250
+  thorium/150
+  surge-alloy/150
 ]
 research: tetrative-reconstructor
 category: units

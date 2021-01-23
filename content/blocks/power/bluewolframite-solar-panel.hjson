@@ -1,0 +1,13 @@
+type: SolarGenerator
+localizedName: Bluewolframite Solar Panel
+description: A much more powerful solar panel, capable of harvesting massive power from light.
+size: 2
+health: 135400
+powerProduction: 15.8
+requirements: [
+  lead/380
+  surge-alloy/150
+  bluewolframite/120
+]
+category: power
+research: solar-panel
